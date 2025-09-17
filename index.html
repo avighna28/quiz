@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MP Police Quiz — 40x Questions per Subject</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>MP Police Exam — Revision Quiz</h1>
+      <p class="subtitle">5 Subjects • 40 Questions each • Practice & Revise — Hinglish friendly</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <label for="subjectSelect">Choose Subject:</label>
+        <select id="subjectSelect"></select>
+
+        <div class="buttons">
+          <button id="startBtn">Start Quiz</button>
+          <button id="resetBtn" class="muted">Reset</button>
+          <button id="printBtn" class="muted">Print / Save as PDF</button>
+        </div>
+      </section>
+
+      <section id="quizArea" class="hidden">
+        <div class="topbar">
+          <div id="qCounter">Q 0 / 40</div>
+          <div id="progressWrap"><div id="progressBar"></div></div>
+        </div>
+
+        <div id="questionCard">
+          <div id="questionText" class="questionText"></div>
+          <div id="optionsWrap" class="optionsWrap"></div>
+        </div>
+
+        <div class="nav">
+          <button id="prevBtn" class="muted">Previous</button>
+          <button id="nextBtn" class="muted">Next</button>
+          <button id="submitBtn" class="primary">Submit</button>
+        </div>
+
+        <div id="resultArea" class="hidden">
+          <h3>Result</h3>
+          <p id="scoreText"></p>
+          <button id="reviewBtn" class="muted">Review Answers</button>
+        </div>
+      </section>
+
+      <section id="reviewArea" class="hidden">
+        <h3>Review</h3>
+        <div id="reviewList"></div>
+        <button id="closeReview" class="muted">Close Review</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>Prepared for quick revision. Questions are MP police-focused and repeat-important items included. — Good luck!</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
